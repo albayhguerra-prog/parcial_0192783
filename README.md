@@ -1,0 +1,1 @@
+Mi página es: https://www.figma.com/design/P6LEtAByxiaZXoUAZtVcSs/Roomie-%E2%80%93-Minimalist-Product-Detail-Page--Community-?node-id=0-1&p=f&t=yLEns2zhzrmvSdMh-0
