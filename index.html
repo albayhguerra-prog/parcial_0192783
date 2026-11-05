@@ -1,100 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acenda - Home page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acenda | Reserva tu próximo destino</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <!--Hero-->
-    <section class = "hero">
-        <header class = "header container">
-            <a href="#" class = "logo" >ACENDA</a>
-            <nav class = "nav"> 
-            <a href="#">Casa</a>
-            <a href="#">Destinos</a>
-            <a href="#">Blog</a>
-            <a href="#">Noticias</a>
-            <a href="#">Contacto</a>
-            </nav>
-        </header>
-        <div class = "seach-card">
-            <h1>Buenos días</h1>
-            <p>Explora estos hermosos lugares del mundo con Acenda</p>
-            <form class = "seach-form" action = "#">
-            <label class = "field"><span class = "ico">&#9906;</span>
-            <div> 
-            <strong> Ubicación </strong>
-            <input type="text" placeholder="Agregar Ubicación">
-            </div></label>
-            <label class="field"><span class="ico">&#128197;</span>
-            <div><strong>Registrarse</strong><input type="text" placeholder="Agregar datos">
-            </div></label>
-            <label class="field"><span class="ico">&#128197;</span>
-            <div><strong>Revisar</strong><input type="text" placeholder="Agregar datos.">
-            </div></label>
-            <label class="field"><span class="ico">&#128101;</span>
-            <div><strong>Invitados</strong><input type="text" placeholder="Agregar Invitados">
-            </div></label>
-            <button type="submit" class="search-btn" aria-label="Search">&#128269;</button>
-            </form>
-            </div>
-    </section>
+
+  <!-- ENCABEZADO / HERO -->
+  <header class="hero">
+    <nav class="nav">
+      <a href="#" class="logo">ACENDA</a>
+      <ul class="nav-links">
+        <li><a href="#">Hogar</a></li>
+        <li><a href="#destinos">Destinos</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#blog">Noticias</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-card">
+      <h1>¡Buenos días!</h1>
+      <p>Explora lugares hermosos en el mundo con Acenda</p>
+
+      <form class="search" onsubmit="return false">
+        <label class="search-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span><strong>Ubicación</strong><input type="text" placeholder="Añadir destino"></span>
+        </label>
+        <label class="search-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          <span><strong>Llegada</strong><input type="text" placeholder="Añadir fechas"></span>
+        </label>
+        <label class="search-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          <span><strong>Salida</strong><input type="text" placeholder="Añadir fechas"></span>
+        </label>
+        <label class="search-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 4.5a3.5 3.5 0 0 1 0 7M18 14.3c2 .7 3.5 2.6 3.5 5.7"/></svg>
+          <span><strong>Invitados</strong><input type="text" placeholder="Agregar invitados"></span>
+        </label>
+        <button class="search-btn" type="submit" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        </button>
+      </form>
+    </div>
+  </header>
 
   <main>
+
     <!-- ¿POR QUÉ ELEGIRNOS? -->
-    <section class="why container">
-      <h2 class="title">¿POR QUÉ ELEGIRNOS?</h2>
+    <section class="section why">
+      <h2>¿Por qué elegirnos?</h2>
       <div class="why-grid">
-        <div class="why-item">
-          <span class="why-icon">$</span>
+        <article>
+          <div class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v12M15 9.5c-.6-1-1.7-1.5-3-1.5-1.7 0-3 .8-3 2.2 0 3 6 1.6 6 4.6 0 1.4-1.3 2.2-3 2.2-1.4 0-2.5-.5-3.1-1.6"/></svg>
+          </div>
           <h3>Precios competitivos</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-        </div>
-        <div class="why-item">
-          <span class="why-icon">&#128737;</span>
+          <p>Encuentra las mejores tarifas en hoteles y destinos de todo el mundo, sin cargos ocultos.</p>
+        </article>
+        <article>
+          <div class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V6l8-3z"/><circle cx="12" cy="10" r="2"/><path d="M9 15c.6-1.2 1.7-1.8 3-1.8s2.4.6 3 1.8"/></svg>
+          </div>
           <h3>Reserva segura</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-        </div>
-        <div class="why-item">
-          <span class="why-icon">&#9881;</span>
+          <p>Tus pagos y datos personales están protegidos con tecnología de seguridad de primer nivel.</p>
+        </article>
+        <article>
+          <div class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M15.5 9.5A4.5 4.5 0 1 0 16.5 13M15.5 6.5v3h-3"/></svg>
+          </div>
           <h3>Experiencia fluida</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-        </div>
+          <p>Reserva en pocos pasos desde cualquier dispositivo, de forma rápida y sin complicaciones.</p>
+        </article>
       </div>
     </section>
 
-    <!-- SOCIOS -->
-    <section class="partners container">
-      <h2 class="title">Nuestros socios</h2>
-      <div class="partners-row">
-        <span>Cozybnb</span>
-        <span>&#9647; Serendipity</span>
-        <span>&#9776; Hideaway</span>
-        <span>&#9651; Earthly</span>
-        <span>&#9711; The Nook</span>
-        <span>&#9635; Hom</span>
-      </div>
+    <!-- NUESTROS SOCIOS -->
+    <section class="section partners">
+      <h2>Nuestros socios</h2>
+      <ul class="partners-list">
+        <li>Cozybnb</li>
+        <li>Serendipity</li>
+        <li>Hideaway</li>
+        <li>Earthly</li>
+        <li>The Nook</li>
+        <li>Homely</li>
+      </ul>
     </section>
 
     <!-- RESERVA AHORA -->
-    <section class="top container">
-      <h2 class="title">Reserva ahora</h2>
-      <div class="top-grid">
-        <article class="stay"><div class="stay-img"><img src="assets/stay-1.png" alt="The Oasis"><span class="rating">&#9733; 4.8</span></div><div class="stay-info"><h3>The Oasis</h3><strong>$10,000</strong></div><p>&#9906; Rio de Janeiro, Brazil</p></article>
-        <article class="stay"><div class="stay-img"><img src="assets/stay-2.png" alt="The Sanctuary"><span class="rating">&#9733; 4.8</span></div><div class="stay-info"><h3>The Sanctuary</h3><strong>$9,000</strong></div><p>&#9906; Bali, Indonesia</p></article>
-        <article class="stay"><div class="stay-img"><img src="assets/stay-3.png" alt="The Infinity"><span class="rating">&#9733; 4.8</span></div><div class="stay-info"><h3>The Infinity</h3><strong>$8,000</strong></div><p>&#9906; Sydney, Australia</p></article>
-        <article class="stay"><div class="stay-img"><img src="assets/stay-4.png" alt="La Maison"><span class="rating">&#9733; 4.8</span></div><div class="stay-info"><h3>La Maison</h3><strong>$8,000</strong></div><p>&#9906; Barcelona, Spain</p></article>
-        <article class="stay"><div class="stay-img"><img src="assets/stay-5.png" alt="Serenity Shores"><span class="rating">&#9733; 4.8</span></div><div class="stay-info"><h3>Serenity Shores</h3><strong>$7,000</strong></div><p>&#9906; Sydney, Australia</p></article>
-        <article class="stay"><div class="stay-img"><img src="assets/stay-6.png" alt="Azure Haven"><span class="rating">&#9733; 4.8</span></div><div class="stay-info"><h3>Azure Haven</h3><strong>$8,000</strong></div><p>&#9906; Barcelona, Spain</p></article>
-        <article class="stay"><div class="stay-img"><img src="assets/stay-7.png" alt="Ocean Breeze"><span class="rating">&#9733; 4.8</span></div><div class="stay-info"><h3>Ocean Breeze</h3><strong>$7,000</strong></div><p>&#9906; Bali, Indonesia</p></article>
-        <article class="stay"><div class="stay-img"><img src="assets/stay-8.png" alt="Palm Breeze"><span class="rating">&#9733; 4.8</span></div><div class="stay-info"><h3>Palm Breeze</h3><strong>$6,000</strong></div><p>&#9906; Phuket, Thailand</p></article>
+    <section class="section booking" id="destinos">
+      <h2>Reserva ahora</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-img"><img src="assets/Rectangle%206.1.png" alt="The Oasis"><span class="rating">★ 4.8</span></div>
+          <div class="card-info"><h3>The Oasis</h3><strong>$10,000</strong></div>
+          <p class="place"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Río de Janeiro, Brasil</p>
+        </article>
+        <article class="card">
+          <div class="card-img"><img src="assets/Rectangle%206.2.png" alt="The Sanctuary"><span class="rating">★ 4.9</span></div>
+          <div class="card-info"><h3>The Sanctuary</h3><strong>$9,000</strong></div>
+          <p class="place"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Bali, Indonesia</p>
+        </article>
+        <article class="card">
+          <div class="card-img"><img src="assets/Rectangle%206.3.png" alt="The Infinity"><span class="rating">★ 4.8</span></div>
+          <div class="card-info"><h3>The Infinity</h3><strong>$8,000</strong></div>
+          <p class="place"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Sídney, Australia</p>
+        </article>
+        <article class="card">
+          <div class="card-img"><img src="assets/Rectangle%206.4.png" alt="La Maison"><span class="rating">★ 4.8</span></div>
+          <div class="card-info"><h3>La Maison</h3><strong>$8,000</strong></div>
+          <p class="place"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Barcelona, España</p>
+        </article>
+        <article class="card">
+          <div class="card-img"><img src="assets/Rectangle%206.5.png" alt="Serenity Shores"><span class="rating">★ 4.8</span></div>
+          <div class="card-info"><h3>Serenity Shores</h3><strong>$7,000</strong></div>
+          <p class="place"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Sídney, Australia</p>
+        </article>
+        <article class="card">
+          <div class="card-img"><img src="assets/Rectangle%206.6.png" alt="Azure Haven"><span class="rating">★ 4.8</span></div>
+          <div class="card-info"><h3>Azure Haven</h3><strong>$8,000</strong></div>
+          <p class="place"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Barcelona, España</p>
+        </article>
+        <article class="card">
+          <div class="card-img"><img src="assets/Rectangle%206.7.png" alt="Ocean Breeze"><span class="rating">★ 4.8</span></div>
+          <div class="card-info"><h3>Ocean Breeze</h3><strong>$7,000</strong></div>
+          <p class="place"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Bali, Indonesia</p>
+        </article>
+        <article class="card">
+          <div class="card-img"><img src="assets/Rectangle%206.1.png" alt="Palm Breeze"><span class="rating">★ 4.8</span></div>
+          <div class="card-info"><h3>Palm Breeze</h3><strong>$6,000</strong></div>
+          <p class="place"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Phuket, Tailandia</p>
+        </article>
       </div>
-      <div class="center"><a href="#" class="btn-pill">See all &rarr;</a></div>
+      <a href="#" class="btn btn-outline">Ver todo <span aria-hidden="true">→</span></a>
     </section>
+
+    <!-- EXPLORA MALDIVAS -->
+    <section class="maldives">
+      <div class="maldives-inner">
+        <h2>EXPLORA MALDIVAS</h2>
+        <div class="maldives-body">
+          <div class="maldives-text">
+            <p>Descubre un paraíso de aguas cristalinas, playas de arena blanca y villas sobre el mar. Vive unas vacaciones inolvidables en uno de los destinos más exclusivos del planeta.</p>
+            <a href="#" class="btn btn-light">Ver todo <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="maldives-gallery">
+            <figure><img src="assets/Rectangle%2053.png" alt="Azure Haven"><figcaption>Azure Haven</figcaption></figure>
+            <figure><img src="assets/Rectangle%2054.png" alt="Serene Sanctuary"><figcaption>Serene Sanctuary</figcaption></figure>
+            <figure><img src="assets/Rectangle%2054%20(1).png" alt="Verdant Vista"><figcaption>Verdant Vista</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REPORTAJE -->
+    <section class="section news" id="blog">
+      <div class="news-head">
+        <h2>Reportaje</h2>
+        <div class="arrows">
+          <button type="button" id="prev" aria-label="Anterior">‹</button>
+          <button type="button" id="next" aria-label="Siguiente">›</button>
+        </div>
+      </div>
+
+      <div class="news-track" id="track">
+        <article class="news-card">
+          <img src="assets/Rectangle%2033.png" alt="Restaurante en Hanalei Bay">
+          <div class="news-body">
+            <time datetime="2024-02-20"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>20 de febrero de 2024</time>
+            <h3>Restaurante delicioso en Hanalei Bay</h3>
+            <p>Una selección de platos frescos con ingredientes locales y vistas al mar. Conoce por qué es uno de los favoritos de los viajeros.</p>
+            <a href="#" class="more">Ver más</a>
+          </div>
+        </article>
+        <article class="news-card">
+          <img src="assets/Rectangle%2033%20(1).png" alt="Playa en Phuket">
+          <div class="news-body">
+            <time datetime="2024-02-20"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>20 de febrero de 2024</time>
+            <h3>Los 10 lugares más hermosos para tomarse fotos en Phuket</h3>
+            <p>Desde playas escondidas hasta miradores increíbles, estos son los rincones perfectos para tus mejores fotos.</p>
+            <a href="#" class="more">Ver más</a>
+          </div>
+        </article>
+        <article class="news-card">
+          <img src="assets/Rectangle%2033%20(2).png" alt="Playa de Navagio">
+          <div class="news-body">
+            <time datetime="2024-02-20"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>20 de febrero de 2024</time>
+            <h3>Los 5 servicios más recientes en la playa de Navagio</h3>
+            <p>Descubre las nuevas experiencias y comodidades que hacen aún más especial tu visita a esta playa icónica.</p>
+            <a href="#" class="more">Ver más</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+<!-- falta pie de pagina -->
 </body>
 </html>
